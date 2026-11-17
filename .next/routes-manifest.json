@@ -1,0 +1,562 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/admin/pengajuan/[id]",
+      "regex": "^/api/admin/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/pengajuan/[id]/action",
+      "regex": "^/api/admin/pengajuan/([^/]+?)/action(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/pengajuan/(?<nxtPid>[^/]+?)/action(?:/)?$"
+    },
+    {
+      "page": "/api/admin/pengajuan/[id]/dokumen",
+      "regex": "^/api/admin/pengajuan/([^/]+?)/dokumen(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/pengajuan/(?<nxtPid>[^/]+?)/dokumen(?:/)?$"
+    },
+    {
+      "page": "/api/admin/pengajuan/[id]/terbitkan",
+      "regex": "^/api/admin/pengajuan/([^/]+?)/terbitkan(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/pengajuan/(?<nxtPid>[^/]+?)/terbitkan(?:/)?$"
+    },
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    },
+    {
+      "page": "/api/files/[id]",
+      "regex": "^/api/files/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/files/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/kades/pengajuan/[id]",
+      "regex": "^/api/kades/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/kades/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/kades/pengajuan/[id]/action",
+      "regex": "^/api/kades/pengajuan/([^/]+?)/action(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/kades/pengajuan/(?<nxtPid>[^/]+?)/action(?:/)?$"
+    },
+    {
+      "page": "/api/layanan/[id]",
+      "regex": "^/api/layanan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/layanan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/staf/users/[id]",
+      "regex": "^/api/staf/users/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/staf/users/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/supervisor/pengajuan/[id]",
+      "regex": "^/api/supervisor/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/supervisor/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/supervisor/pengajuan/[id]/action",
+      "regex": "^/api/supervisor/pengajuan/([^/]+?)/action(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/supervisor/pengajuan/(?<nxtPid>[^/]+?)/action(?:/)?$"
+    },
+    {
+      "page": "/api/surat/download/[id]",
+      "regex": "^/api/surat/download/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/surat/download/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/surat/preview/[pengajuanId]",
+      "regex": "^/api/surat/preview/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpengajuanId": "nxtPpengajuanId"
+      },
+      "namedRegex": "^/api/surat/preview/(?<nxtPpengajuanId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/kades/pengajuan/[id]",
+      "regex": "^/kades/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/kades/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/staf/layanan/[id]",
+      "regex": "^/staf/layanan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/staf/layanan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/staf/layanan/[id]/edit",
+      "regex": "^/staf/layanan/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/staf/layanan/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/staf/pengajuan/[id]",
+      "regex": "^/staf/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/staf/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/supervisor/pengajuan/[id]",
+      "regex": "^/supervisor/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/supervisor/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/surat/preview/[pengajuanId]",
+      "regex": "^/surat/preview/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpengajuanId": "nxtPpengajuanId"
+      },
+      "namedRegex": "^/surat/preview/(?<nxtPpengajuanId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/surat/[id]",
+      "regex": "^/surat/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/surat/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/warga/layanan/[id]",
+      "regex": "^/warga/layanan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/warga/layanan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/warga/layanan/[id]/ajukan",
+      "regex": "^/warga/layanan/([^/]+?)/ajukan(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/warga/layanan/(?<nxtPid>[^/]+?)/ajukan(?:/)?$"
+    },
+    {
+      "page": "/warga/pengajuan/[id]",
+      "regex": "^/warga/pengajuan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/warga/pengajuan/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/config",
+      "regex": "^/api/admin/notifications/config(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/config(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/logs",
+      "regex": "^/api/admin/notifications/logs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/logs(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/retry",
+      "regex": "^/api/admin/notifications/retry(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/retry(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/test-email",
+      "regex": "^/api/admin/notifications/test\\-email(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/test\\-email(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/test-warga-whatsapp",
+      "regex": "^/api/admin/notifications/test\\-warga\\-whatsapp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/test\\-warga\\-whatsapp(?:/)?$"
+    },
+    {
+      "page": "/api/admin/notifications/test-whatsapp",
+      "regex": "^/api/admin/notifications/test\\-whatsapp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/notifications/test\\-whatsapp(?:/)?$"
+    },
+    {
+      "page": "/api/admin/pengajuan",
+      "regex": "^/api/admin/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/api/ai/chat",
+      "regex": "^/api/ai/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/ai/chat(?:/)?$"
+    },
+    {
+      "page": "/api/audit-logs",
+      "regex": "^/api/audit\\-logs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audit\\-logs(?:/)?$"
+    },
+    {
+      "page": "/api/auth/me",
+      "regex": "^/api/auth/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/me(?:/)?$"
+    },
+    {
+      "page": "/api/chatbot",
+      "regex": "^/api/chatbot(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chatbot(?:/)?$"
+    },
+    {
+      "page": "/api/chatbot/provider/status",
+      "regex": "^/api/chatbot/provider/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chatbot/provider/status(?:/)?$"
+    },
+    {
+      "page": "/api/chatbot/session",
+      "regex": "^/api/chatbot/session(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chatbot/session(?:/)?$"
+    },
+    {
+      "page": "/api/chatbot/surat/ajukan",
+      "regex": "^/api/chatbot/surat/ajukan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chatbot/surat/ajukan(?:/)?$"
+    },
+    {
+      "page": "/api/kades/pengajuan",
+      "regex": "^/api/kades/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/kades/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/api/laporan/statistik",
+      "regex": "^/api/laporan/statistik(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/laporan/statistik(?:/)?$"
+    },
+    {
+      "page": "/api/layanan",
+      "regex": "^/api/layanan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/layanan(?:/)?$"
+    },
+    {
+      "page": "/api/models",
+      "regex": "^/api/models(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/models(?:/)?$"
+    },
+    {
+      "page": "/api/notifications",
+      "regex": "^/api/notifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/notifications(?:/)?$"
+    },
+    {
+      "page": "/api/pengajuan",
+      "regex": "^/api/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/api/staf/users",
+      "regex": "^/api/staf/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/staf/users(?:/)?$"
+    },
+    {
+      "page": "/api/supervisor/pengajuan",
+      "regex": "^/api/supervisor/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/supervisor/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/api/supervisor/settings",
+      "regex": "^/api/supervisor/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/supervisor/settings(?:/)?$"
+    },
+    {
+      "page": "/api/surat/generate-nomor",
+      "regex": "^/api/surat/generate\\-nomor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/surat/generate\\-nomor(?:/)?$"
+    },
+    {
+      "page": "/api/warga/notifications/test-whatsapp",
+      "regex": "^/api/warga/notifications/test\\-whatsapp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/warga/notifications/test\\-whatsapp(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/kades",
+      "regex": "^/kades(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kades(?:/)?$"
+    },
+    {
+      "page": "/kades/audit",
+      "regex": "^/kades/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kades/audit(?:/)?$"
+    },
+    {
+      "page": "/kades/laporan",
+      "regex": "^/kades/laporan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kades/laporan(?:/)?$"
+    },
+    {
+      "page": "/kades/pengajuan",
+      "regex": "^/kades/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kades/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/notifikasi",
+      "regex": "^/notifikasi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/notifikasi(?:/)?$"
+    },
+    {
+      "page": "/staf",
+      "regex": "^/staf(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf(?:/)?$"
+    },
+    {
+      "page": "/staf/layanan",
+      "regex": "^/staf/layanan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf/layanan(?:/)?$"
+    },
+    {
+      "page": "/staf/layanan/baru",
+      "regex": "^/staf/layanan/baru(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf/layanan/baru(?:/)?$"
+    },
+    {
+      "page": "/staf/notifikasi",
+      "regex": "^/staf/notifikasi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf/notifikasi(?:/)?$"
+    },
+    {
+      "page": "/staf/pengajuan",
+      "regex": "^/staf/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/staf/pengguna",
+      "regex": "^/staf/pengguna(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/staf/pengguna(?:/)?$"
+    },
+    {
+      "page": "/supervisor",
+      "regex": "^/supervisor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor(?:/)?$"
+    },
+    {
+      "page": "/supervisor/audit",
+      "regex": "^/supervisor/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/audit(?:/)?$"
+    },
+    {
+      "page": "/supervisor/database",
+      "regex": "^/supervisor/database(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/database(?:/)?$"
+    },
+    {
+      "page": "/supervisor/laporan",
+      "regex": "^/supervisor/laporan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/laporan(?:/)?$"
+    },
+    {
+      "page": "/supervisor/notifikasi",
+      "regex": "^/supervisor/notifikasi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/notifikasi(?:/)?$"
+    },
+    {
+      "page": "/supervisor/pengajuan",
+      "regex": "^/supervisor/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/pengajuan(?:/)?$"
+    },
+    {
+      "page": "/supervisor/pengaturan",
+      "regex": "^/supervisor/pengaturan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/pengaturan(?:/)?$"
+    },
+    {
+      "page": "/supervisor/pengguna",
+      "regex": "^/supervisor/pengguna(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/supervisor/pengguna(?:/)?$"
+    },
+    {
+      "page": "/unauthorized",
+      "regex": "^/unauthorized(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/unauthorized(?:/)?$"
+    },
+    {
+      "page": "/warga",
+      "regex": "^/warga(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/warga(?:/)?$"
+    },
+    {
+      "page": "/warga/asisten-ai",
+      "regex": "^/warga/asisten\\-ai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/warga/asisten\\-ai(?:/)?$"
+    },
+    {
+      "page": "/warga/layanan",
+      "regex": "^/warga/layanan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/warga/layanan(?:/)?$"
+    },
+    {
+      "page": "/warga/pengajuan",
+      "regex": "^/warga/pengajuan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/warga/pengajuan(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
