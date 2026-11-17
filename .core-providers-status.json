@@ -1,0 +1,6 @@
+{
+  "openai": false,
+  "gemini": true,
+  "deepseek": true,
+  "groq": true
+}
